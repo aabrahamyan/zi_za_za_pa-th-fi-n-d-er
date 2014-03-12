@@ -21,7 +21,7 @@ public class PathFinderExecutor {
 	public boolean leeThePath(char[][] arr, int row, int col) {
 		if (row != col) {
 			throw new NotASquareException(
-					"Provided matrix is not a square, cols 1= rows");
+					"Provided matrix is not a square, cols != rows");
 		}
 
 		final int[][] grid = new int[row][col];
@@ -46,6 +46,7 @@ public class PathFinderExecutor {
 		// while there are neighbours in queue
 		while (!queue.isEmpty()) {
 
+			// Polling the queue
 			Point current = queue.poll();
 			List<Point> blocks = getNeighbourForBlock(current, row, col);
 
@@ -106,6 +107,16 @@ public class PathFinderExecutor {
 		if (posDownLeft.row >= 0 && posDownLeft.row < row
 				&& posDownLeft.col >= 0 && posDownLeft.col < col)
 			neighours.add(posDownLeft);
+
+		// NOTE: You can enable this call for direct move, but in that case, it
+		// is required to disable getBottomLeft() and getBottomRight()
+		// neighbours calculation
+		// in order to avoid duplicates A.A.
+		/*
+		 * Point directBottom = p.getDirectBottom(); if (posDownLeft.row >= 0 &&
+		 * posDownLeft.row < row && posDownLeft.col >= 0 && posDownLeft.col <
+		 * col)
+		 */
 
 		return neighours;
 

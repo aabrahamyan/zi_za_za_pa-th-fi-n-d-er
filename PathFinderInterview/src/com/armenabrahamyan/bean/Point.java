@@ -35,6 +35,14 @@ public class Point {
     public Point getBottomLeft() {
         return new Point(row + 1, col - 1);
     }
+    
+    /**
+     * Disabled now (is not called for diagonal path movement)
+     * @return
+     */
+    public Point getDirectBottom() {
+    	return new Point(row + 1, col);
+    }
  
     public Point getUp() {
         return new Point(row - 1, col);
