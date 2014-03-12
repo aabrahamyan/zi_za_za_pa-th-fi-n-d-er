@@ -3,9 +3,11 @@ zi_za_za_pa-th-fi-n-d-er
 
 A pathfinder, implements famous Lee Algorithm in order to find a path of squared Matrix. It uses 
 
-   " a "
+     a 
     axa   
-     a   movements adjucence. This way it will move down in diagonal. There is a method in Point.java called "getDirectBottom()" which allows to be moved directly down. I have just changed an adjucence, this way just because it was interesting to me, you can enable getDirectBottom() and it will work with direct movement to down as well.
+     a   
+
+movements adjucence. This way it will move down in diagonal. There is a method in Point.java called "getDirectBottom()" which allows to be moved directly down. I have just changed an adjucence, this way just because it was interesting to me, you can enable getDirectBottom() and it will work with direct movement to down as well.
      
 
 How to run:
