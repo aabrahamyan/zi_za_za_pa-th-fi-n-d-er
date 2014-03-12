@@ -16,7 +16,7 @@ Modify            ``` final int rows = 5;
 		      final int columns = 5; 
 		  ```
 
-in PathFinderImpl.java. Note that rows must be equal to columns, otherwise NotASquareMatrix exception will be thrown.
+in PathFinderImpl.java. Note that rows must be equal to columns, otherwise NotASquareException will be thrown.
 		   
 Mofiy                           ``` final String input = "        AAAAA " +
 							 "	  AAXAA " +
