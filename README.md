@@ -23,10 +23,10 @@ Mofiy                           ``` final String input = "        AAAAA " +
 							 "	  XAXAA " +
 							 "	  XAAXX " +
 							 "	  FAXAA";```  
-
-You should add a "\t" sign before every new row. This is just a matter of formatting, code splits a string by "\t". This is pretty much it. You are free to run and check.
- As a start point solution looks  at (0,0), to identify desired path you must add "F" before desired end block in matrix, F=Finish. Though it is not really neccessary, but I thought maybe you would like to play around with destination point as well.
+							 
+ As a start point solution looks  from (0,0), to identify desired path you must add "F" before desired end block in matrix, F=Finish. Though it is not really neccessary, but I thought maybe you would like to play around with destination point as well.
+ You should add a "\t" sign before every new row. This is just a matter of formatting, code splits a string by "\t". This is pretty much it. You are free to run and check.
  
-P.S. Though programm accepts nxn matrix and throws exception, it works for non square matrixes as well, just need to remove a check for square condition (and runtime exception throwing) in PathFinderExecutor.java in leeThePath(char[][] arr, int row, int col) method.
+P.S. Though programm accepts nxn matrix and throws exception when n != m, it works for non square matrixes as well, just need to remove a check for square condition (and runtime exception throwing) in PathFinderExecutor.java in leeThePath(char[][] arr, int row, int col) method.
 							
      
