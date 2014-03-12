@@ -12,13 +12,18 @@ movements adjucence. This way it will move down in diagonal. There is a method i
 
 How to run:
 
-Modify final int rows = 5;   
-		   final int columns = 5; in PathFinderImpl.java. Note that rows must be equal to columns, otherwise NotASquareMatrix exception will be thrown.
+Modify            ``` final int rows = 5;
+		      final int columns = 5; 
+		  ```
+
+in PathFinderImpl.java. Note that rows must be equal to columns, otherwise NotASquareMatrix exception will be thrown.
 		   
-Mofiy  final String input = "    AAAAA " +
+Mofiy                           ``` final String input = "        AAAAA " +
 							 "	  AAXAA " +
 							 "	  XAXAA " +
 							 "	  XAAXX " +
-							 "	  FAXAA";  You should add a "\t" sign before every new row. This is just a matter of formatting, code splits a string by "\t". This is pretty much it. You are free to run and check.
+							 "	  FAXAA";```  
+
+You should add a "\t" sign before every new row. This is just a matter of formatting, code splits a string by "\t". This is pretty much it. You are free to run and check.
 							
      
